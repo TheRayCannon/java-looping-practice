@@ -6,6 +6,7 @@ class App {
   }
 
   static String message = "I love java";
+  static String lunchParty = "Launch!";
 
   private static void forLoop() {
     for (int foo = 0; foo < 5; foo++) {
@@ -22,10 +23,14 @@ class App {
   }
 
   private static void doWhileLoop() {
-    int i = 0;
+    int i = 10;
     do {
-      System.out.println("using do while : " + message);
-      i++;
-    } while (i < 5);
+      System.out.println("using do while : " + i);
+      i--;
+      if (i == 0) {
+        System.out.println(lunchParty);
+      }
+    } while (i > 0);
+
   }
 }
